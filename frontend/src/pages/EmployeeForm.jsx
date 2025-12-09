@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { createEmployee, getEmployeeById, updateEmployee } from "../api/employeeApi";
+import COLORS from "../colors"; 
 
 const EmployeeForm = () => {
   const navigate = useNavigate();
@@ -62,11 +63,14 @@ const EmployeeForm = () => {
   return (
     <div className="row justify-content-center">
         <div className="col-md-8">
-            <div className="card shadow-lg border-0">
-                <div className="card-header bg-primary text-white py-3">
+            <div className="card shadow-lg border-0" style={{ backgroundColor: COLORS.bgPrimary }}>
+                <div 
+                    className="card-header py-3"
+                    style={{ backgroundColor: COLORS.primary, color: COLORS.textLight }}
+                >
                     <h5 className="mb-0 fw-bold">{id ? "Edit Data Karyawan" : "Form Karyawan Baru"}</h5>
                 </div>
-                <div className="card-body p-4">
+                <div className="card-body p-4" style={{ color: COLORS.textPrimary }}>
                 <form onSubmit={handleSubmit}>
                     <div className="row">
                         <div className="col-md-6 mb-3">
@@ -123,8 +127,21 @@ const EmployeeForm = () => {
                     )}
 
                     <div className="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
-                        <button type="button" onClick={() => navigate("/employees")} className="btn btn-secondary px-4 me-md-2">Batal</button>
-                        <button type="submit" className="btn btn-primary px-4">Simpan Data</button>
+                        <button 
+                            type="button" 
+                            onClick={() => navigate("/employees")} 
+                            className="btn px-4 me-md-2"
+                            style={{ backgroundColor: COLORS.bgLight, color: COLORS.textSecondary }}
+                        >
+                            Batal
+                        </button>
+                        <button 
+                            type="submit" 
+                            className="btn px-4"
+                            style={{ backgroundColor: COLORS.primary, color: COLORS.textLight }}
+                        >
+                            Simpan Data
+                        </button>
                     </div>
                 </form>
                 </div>
