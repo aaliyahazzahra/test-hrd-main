@@ -1,0 +1,15 @@
+# Ignore node_modules for both backend and frontend during build context transfer
+node_modules/
+
+# Ignore local Python environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore environment variables file (security)
+.env
+
+# Ignore build output folders
+dist/
+build/

@@ -1,0 +1,13 @@
+# backend/requirements.txt
+
+# Web Framework
+fastapi
+uvicorn[standard] # Server ASGI
+
+# Database ORM/Tools
+psycopg2-binary # Driver PostgreSQL
+sqlalchemy # ORM (umum digunakan dengan FastAPI untuk DB access)
+pydantic[email] # Untuk validasi email dan skema data
+
+# Environment Variables
+python-dotenv
