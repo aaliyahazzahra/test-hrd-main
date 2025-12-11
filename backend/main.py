@@ -1,6 +1,11 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 # Import routers
 from src.api import employees, stats
 
@@ -14,7 +19,8 @@ app = FastAPI(
 # CORS Configuration (Required for frontend communication)
 # Allow requests from all origins during development
 origins = [
-    "*",
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
 ]
 
 app.add_middleware(

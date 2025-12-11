@@ -1,17 +1,17 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import EmployeeList from "./pages/EmployeeList";
 import EmployeeForm from "./pages/EmployeeForm";
-import Dashboard from "./pages/dashboard";
+import Dashboard from "./pages/Dashboard";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <Router>
-      <div className="d-flex flex-column min-vh-100">
+      <div className="d-flex flex-column min-vh-100" style={{ backgroundColor: 'rgba(255, 176, 205, 0.2)' }}>
         {/* Navbar Full Width */}
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: '#FFB0CD' }} shadow-sm>
             <div className="container-fluid px-4">
-                <Link className="navbar-brand fw-bold" to="/">Employee Management System</Link>
+                <Link className="navbar-brand fw-bold text-dark" to="/">Employee Management System</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span className="navbar-toggler-icon"></span>
                 </button>

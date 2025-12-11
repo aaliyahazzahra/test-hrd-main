@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { createEmployee, getEmployeeById, updateEmployee } from "../api/employeeApi";
-import COLORS from "../colors"; 
+import COLORS from "../constants/colors";
 
 const EmployeeForm = () => {
   const navigate = useNavigate();
@@ -138,7 +138,7 @@ const EmployeeForm = () => {
                         <button 
                             type="submit" 
                             className="btn px-4"
-                            style={{ backgroundColor: COLORS.primary, color: COLORS.textLight }}
+                            style={{ backgroundColor: COLORS.primary, color: COLORS.textPrimary }}
                         >
                             Simpan Data
                         </button>

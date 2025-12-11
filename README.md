@@ -104,7 +104,15 @@ test-hrd-main/
 └── screenshots/              # Folder for UI screenshots [cite: 137]
 ```
 
-## 6. Screenshots [cite: 136]
+## 6. Screenshots
+
+### Employee List View
+![Screenshot Employee List View](screenshots/DashboardWeb.png "Daftar Karyawan (Mode Web)")
+![Screenshot Employee List View](screenshots/DashboardPhone.png "Daftar Karyawan (Mode Ponsel)")
+
+### Add/Edit Employee Form
+![Screenshot Add/Edit Employee Form](screenshots/ManajemenWeb.png "Formulir Tambah/Edit Karyawan")
+
 Screenshots of the application UI can be found in the `screenshots/` directory.
 
 ## 7. Challenge and Solution [cite: 133]
